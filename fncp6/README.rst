@@ -1,7 +1,7 @@
 FNCP6
 =====
 
-.. image:: https://raw.github.com/Earnestly/fncp6/master/screenshot.png
+.. image:: https://github.com/Earnestly/fonts/blob/master/fncp6/screenshot.png
 
 A monospaced font with inspiration by early 80s futurism, Helvetica,
 Instruction, Letter Gothic and OCR-B.
