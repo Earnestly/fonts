@@ -10,6 +10,7 @@ REQUIRES
 --------
 
 * `Fontforge <http://fontforge.github.io/en-US/>`_ 
+
   This assumes at least ``fontforge-git 1:20141126.r69.g036cd6e-1``.  Older 
   versions may work but I don't test them.
 
