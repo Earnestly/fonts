@@ -21,7 +21,7 @@ OS2Version: 0
 OS2_WeightWidthSlopeOnly: 0
 OS2_UseTypoMetrics: 1
 CreationTime: 1419784836
-ModificationTime: 1420087760
+ModificationTime: 1420310048
 PfmFamily: 49
 TTFWeight: 400
 TTFWidth: 5
@@ -29,16 +29,16 @@ LineGap: 200
 VLineGap: 0
 OS2TypoAscent: 1000
 OS2TypoAOffset: 0
-OS2TypoDescent: -200
+OS2TypoDescent: -250
 OS2TypoDOffset: 0
 OS2TypoLinegap: 200
 OS2WinAscent: 1000
 OS2WinAOffset: 0
-OS2WinDescent: -200
+OS2WinDescent: -250
 OS2WinDOffset: 0
 HheadAscent: 1000
 HheadAOffset: 0
-HheadDescent: -200
+HheadDescent: -250
 HheadDOffset: 0
 OS2CapHeight: 0
 OS2XHeight: 0
@@ -234,29 +234,29 @@ Back
 Fore
 SplineSet
 73 186 m 2
- 73 434 l 6
+ 73 434 l 2
  73 539 156 625 259 625 c 2
- 321 625 l 2
- 369 625 412 607 445 576 c 1
+ 321 625 l 6
+ 369 625 412 607 445 576 c 5
  445 589 l 2
  445 606 459 620 476 620 c 0
  493 620 507 606 507 589 c 2
  507 31 l 2
  507 14 493 0 476 0 c 0
  459 0 445 14 445 31 c 2
- 445 44 l 1
- 412 13 369 -5 321 -5 c 2
+ 445 44 l 5
+ 412 13 369 -5 321 -5 c 6
  259 -5 l 2
  156 -5 73 81 73 186 c 2
-135 434 m 6
+135 434 m 2
  135 186 l 2
  135 115 191 57 259 57 c 2
- 321 57 l 2
- 389 57 445 115 445 186 c 2
- 445 434 l 2
- 445 505 389 563 321 563 c 2
+ 321 57 l 6
+ 389 57 445 115 445 186 c 6
+ 445 434 l 6
+ 445 505 389 563 321 563 c 6
  259 563 l 2
- 191 563 135 505 135 434 c 6
+ 191 563 135 505 135 434 c 2
 EndSplineSet
 Validated: 1
 EndChar
@@ -3119,7 +3119,7 @@ StartChar: w
 Encoding: 119 119 87
 Width: 580
 VWidth: 0
-Flags: W
+Flags: HWO
 HStem: 0 21G<190 205 375 390.5> 600 20G<94 110.5 282.5 298.5 469.5 486>
 VStem: 73 62<551.774 618.404> 445 62<551.774 618.404>
 LayerCount: 2
@@ -3142,21 +3142,20 @@ SplineSet
  409 7 398 0 383 0 c 0
  367 0 357 8 352 26 c 2
  290 400 l 1
- 228 26 l 6
- 224 7 213 0 197 0 c 4
- 183 0 170 7 166 26 c 6
+ 228 26 l 2
+ 224 7 213 0 197 0 c 0
+ 183 0 170 7 166 26 c 2
  73 584 l 2
  73 585 73 587 73 588 c 0
 EndSplineSet
-Validated: 1
 EndChar
 
 StartChar: x
 Encoding: 120 120 88
 Width: 580
 VWidth: 0
-Flags: HWO
-HStem: 0 21G<94 108.5 471.5 486> 600 20G<94 108.5 471.5 486>
+Flags: W
+HStem: -5 21G<94 108.5 471.5 486> 605 20G<94 108.5 471.5 486>
 LayerCount: 2
 Back
 Fore
@@ -3183,6 +3182,7 @@ SplineSet
  130 9 l 6
  124 0 114 -5 103 -5 c 4
 EndSplineSet
+Validated: 1
 EndChar
 
 StartChar: y
@@ -3221,7 +3221,7 @@ StartChar: z
 Encoding: 122 122 90
 Width: 580
 VWidth: 0
-Flags: W
+Flags: WO
 HStem: 0 62<162 505.596> 558 62<74.4041 418>
 LayerCount: 2
 Back
