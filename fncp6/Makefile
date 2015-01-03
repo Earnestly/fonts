@@ -1,24 +1,23 @@
 FONTFORGE = /usr/bin/fontforge
-FONTFORGE_OPTIONS = -script
+FONTFORGE_OPTIONS = -quiet -script
 
-VALIDATE.otf = $(FONTFORGE) $(FONTFORGE_OPTIONS) mk/validate-opentype.pe
+VALIDATE.sfd = $(FONTFORGE) $(FONTFORGE_OPTIONS) mk/validate-opentype.pe
 COMPILE.otf = $(FONTFORGE) $(FONTFORGE_OPTIONS) mk/generate-opentype.pe
+
 %.otf: %.sfd
+	$(VALIDATE.sfd) $^
 	$(COMPILE.otf) $^
 
 VPATH = src
 
-all: FNCP6-Regular.otf FNCP6-Bold.otf
+all: regular bold
 
-FNCP6-Regular.otf: FNCP6-Regular.sfd
+regular: FNCP6-Regular.otf
 
-FNCP6-Bold.otf: FNCP6-Bold.sfd
-
-test: FNCP6-Bold.otf FNCP6-Regular.otf
-	$(VALIDATE.otf) $^
+bold: FNCP6-Bold.otf
 
 clean:
 	$(RM) FNCP6-Regular.otf
 	$(RM) FNCP6-Bold.otf
 
-.PHONY: all clean regular bold
+.PHONY: all regular bold clean
