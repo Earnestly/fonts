@@ -8,6 +8,7 @@ glyph_is_flipped     = 0x10
 is_missing_extrema   = 0x20
 glyph_not_present    = 0x40
 points_too_far_apart = 0x40000
+non_integral_point   = 0x80000
 
 i = 1
 while(i < $argc)
@@ -44,6 +45,10 @@ while(i < $argc)
 
         if (state & points_too_far_apart)
             Print("* Points too far apart.")
+        endif
+
+        if (state & non_integral_point)
+            Print("* Non-integral points.")
         endif
 
         Quit(1)
