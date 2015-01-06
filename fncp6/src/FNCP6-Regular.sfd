@@ -2801,7 +2801,7 @@ StartChar: m
 Encoding: 109 109 78
 Width: 580
 VWidth: 0
-Flags: W
+Flags: WO
 HStem: 0 21G<95.5 112.5 281.5 298.5 467.5 484.5> 558 62<150.431 243.281 336.719 429.034>
 VStem: 73 62<1.40405 542.8> 259 62<1.40405 542.8> 445 62<1.40405 541.268>
 CounterMasks: 1 38
@@ -3221,7 +3221,7 @@ StartChar: z
 Encoding: 122 122 90
 Width: 580
 VWidth: 0
-Flags: WO
+Flags: W
 HStem: 0 62<162 505.596> 558 62<74.4041 418>
 LayerCount: 2
 Back
