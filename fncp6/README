@@ -1,0 +1,27 @@
+fncp6 <https://github.com/Earnestly/fonts/tree/master/fncp6>
+
+  Fncp6 is a monospaced font with inspiration by early 80s futurism, Helvetica,
+  Instruction, Letter Gothic and OCR-B.
+  
+  It was created as an educational experiment with OpenType hinting metrics.
+
+  Screenshot: <https://github.com/Earnestly/fonts/blob/master/fncp6/scrot.png>
+
+REQUIRES
+
+  - fontforge <http://fontforge.github.io/en-US/>
+
+    NOTE: This assumes at least fontforge 20141126-69-g036cd6e.
+          Older versions may work but I don't test them.
+
+BUILD
+
+  For a local install:
+
+    make
+    mv *.otf "$XDG_DATA_HOME"/fonts
+
+  Alternatively for a global installation:
+
+    make
+    make PREFIX=/usr install

@@ -1,4 +1,4 @@
-#!/usr/bin/env fontforge
+#!/usr/bin/fontforge -quiet
 # ./validate-opentype.pe
 
 has_open_contour     = 0x2
@@ -17,38 +17,38 @@ while(i < $argc)
     state = Validate()
 
     if (state != 0)
-        Print("ERROR: " + $argv[i] + " (" + state + "):")
+        Print("error " + $argv[i] + " " + state)
 
         if (state & has_open_contour)
-            Print("* Open contour.")
+            Print("open contour")
         endif
 
         if (state & is_intersecting)
-            Print("* Intersecting glyph.")
+            Print("intersecting glyph")
         endif
 
         if (state & wrong_direction)
-            Print("* Contour drawn in the wrong direction.")
+            Print("contour drawn in the wrong direction")
         endif
 
         if (state & glyph_is_flipped)
-            Print("* At least one reference in the glyph has been flipped.")
+            Print("at least one reference in the glyph has been flipped")
         endif
 
         if (state & is_missing_extrema)
-            Print("* Missing extrema.")
+            Print("missing extrema")
         endif
 
         if (state & glyph_not_present)
-            Print("* A referenced glyph is not present in the font.")
+            Print("a referenced glyph is not present in the font")
         endif
 
         if (state & points_too_far_apart)
-            Print("* Points too far apart.")
+            Print("points too far apart")
         endif
 
         if (state & non_integral_point)
-            Print("* Non-integral points.")
+            Print("non-integral points")
         endif
 
         Quit(1)

@@ -1,0 +1,25 @@
+Fncp7 <https://github.com/Earnestly/fonts/tree/master/fncp7>
+
+  An iteration over FNCP6 with flat terminals and lower x-height.  This was to
+  further experiment with hinting opentype fonts.
+
+  Screenshot: <https://github.com/Earnestly/fonts/blob/master/fncp7/scrot.png>
+
+REQUIRES
+
+  - fontforge <http://fontforge.github.io/en-US/>
+
+    NOTE: This assumes at least fontforge 20141126-69-g036cd6e.
+          Older versions may work but I don't test them.
+
+BUILD
+
+  For a local install:
+
+    make
+    mv *.otf "$XDG_DATA_HOME"/fonts
+
+  Alternatively for a global installation:
+
+    make
+    make PREFIX=/usr install

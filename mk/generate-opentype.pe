@@ -1,4 +1,4 @@
-#!/usr/bin/env fontforge
+#!/usr/bin/fontforge -quiet
 # ./generate.pe [sfd]+
 
 i = 1
